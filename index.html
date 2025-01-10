@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"></div>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="search">
+      <span id="search-icon" onclick="toggleSearch()"><i class="fas fa-search"></i></span>
+      <input type="text" id="search-input" placeholder="Search..." style="display: none;">
+      <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+      <span class="like"><i class="fa-regular fa-heart"></i></span>
+    </div>
+  </header>
+
+  <section class="card">
+      <div class="icon"></div>
+      <h1>Card</h1>
+      <div class="home-nav">
+        <a href="#">Home</a> > <span>Card</span>
+      </div>
+  </section>
+
+  <main class="cart-main">
+        <section class="cart-items">
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items-list"></tbody>
+            </table>
+        </section>
+        
+        <section class="cart-totals">
+            <h2>Cart Totals</h2>
+            <div id="cart-subtotal"></div>
+            <div id="cart-total"></div>
+            <button id="checkout-button">Check Out</button>
+          </section>
+   
+  </main>
+
+  <footer class="footer">
+    <div class="service-icons">
+      <i class="fa-solid fa-trophy"></i>
+      <span>
+        <div class="high">High Quality</div>
+        <div>crafted from top materials</div>
+      </span>
+      <i class="fa-solid fa-badge-check"></i>
+      <span>
+        <div class="high">Warranty Protection</div>
+        <div>Over 2 years</div>
+      </span>
+      <i class="fa-solid fa-truck-fast"></i>
+      <span> 
+        <div class="high">Free Shipping</div>
+        <div>Order over 150 $</div>
+      </span>
+      <i class="fa-solid fa-headset"></i>
+      <span>
+        <div class="high">24 / 7 support</div>
+        <div>dedicated support</div>
+      </span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
