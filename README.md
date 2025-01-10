@@ -4,6 +4,10 @@
 This project represents a cart page for an e-commerce website. It is designed to display the items in
 the cart, their details such as price and quantity, and allows the user to proceed with the checkout.
 
+## Live Demo
+
+You can check out the live demo of the cart page here: [Cart Page Demo](https://coding-assessment-l2-nine.vercel.app//)
+
 ## Project Structure
 The project consists of the following files:
 - `index.html`: Main HTML file for the project.
